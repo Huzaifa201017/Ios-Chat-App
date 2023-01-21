@@ -17,4 +17,4 @@ Level: Beginner/Intermediate.
 + Singleton
 
 ## Instructions
-To run this project you have to first execute the command `pod install` in the project's directory.
+To run this project you have to first execute the command `pod install` in the project's directory and then open the .workspace file and run it .
