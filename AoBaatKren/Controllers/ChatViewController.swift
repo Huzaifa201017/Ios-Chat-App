@@ -304,6 +304,8 @@ extension ChatViewController: MessagesDataSource, MessagesDisplayDelegate, Messa
             
         }
     }
+    
+    
 }
 
 extension  ChatViewController: InputBarAccessoryViewDelegate{
@@ -612,4 +614,6 @@ extension ChatViewController: UIImagePickerControllerDelegate , UINavigationCont
         
         picker.dismiss(animated: true)
     }
+    
+    
 }

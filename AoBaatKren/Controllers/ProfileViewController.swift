@@ -29,7 +29,7 @@ final class ProfileViewController: UIViewController {
         if let url = usr.url {
             
             print("URL For profile pic : (Line 38 in ProfileVC): ",url.absoluteString)
-            StorageManager().downloadFile(url: url, view: self, imageView: self.headerImage)
+            StorageManager().downloadImage(url: url, imageView: self.headerImage)
             
         } else {
             
@@ -41,7 +41,7 @@ final class ProfileViewController: UIViewController {
                     
                     case .success (let url):
                     usr.setURL(url: url)
-                    StorageManager().downloadFile(url: url, view: strongSelf, imageView: strongSelf.headerImage)
+                    StorageManager().downloadImage(url: url, imageView: strongSelf.headerImage)
                       
                     case .failure (let error):
                       print("Failed to get download url: Line 47 : ProfileVC: \(error)")
@@ -66,6 +66,7 @@ final class ProfileViewController: UIViewController {
         headerImage.layer.cornerRadius = 150 / 2
         
     }
+    
     
     func setUpData(){
         let user = User.Instance()
@@ -133,6 +134,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate{
         return data.count
     }
     
+   
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         

@@ -2,17 +2,20 @@
 import Foundation
 import MessageKit
 
+
+
+/// class representing message
 final class Message: MessageType {
     
-    var sender: MessageKit.SenderType
+    var sender: SenderType       // sender of the message
     
-    var messageId: String
+    var messageId: String        // the unqiue id of that message
+      
+    var sentDate: Date           // sent date of that message
     
-    var sentDate: Date
+    var kind: MessageKind        // message kind i.e text , photo , video etc
     
-    var kind: MessageKit.MessageKind
-    
-    init(sender: MessageKit.SenderType, messageId: String, sentDate: Date, kind: MessageKit.MessageKind) {
+    init(sender: SenderType, messageId: String, sentDate: Date, kind: MessageKind) {
         
         self.sender = sender
         self.messageId = messageId
@@ -24,7 +27,9 @@ final class Message: MessageType {
 }
 
 extension MessageKind {
+    // a variable which will return the message kind as string to store in database
     var messageKindString: String {
+        
         switch self {
         case .text(_):
             return "text"
@@ -51,11 +56,13 @@ extension MessageKind {
     }
 }
 
+
+/// class representing Sender
 final class Sender: SenderType {
     
-    var senderId: String
+    var senderId: String        // sender id
     
-    var displayName: String
+    var displayName: String     // name of the sender
     
     
     
@@ -67,11 +74,14 @@ final class Sender: SenderType {
     
 }
 
+
+/// class representing Media like photo video
 final class Media: MediaItem{
-    var url: URL?
-    var image: UIImage?
-    var placeholderImage: UIImage
-    var size: CGSize
+    
+    var url: URL?                      // url of the media item (firebase url)
+    var image: UIImage?                // image corresponding to that media
+    var placeholderImage: UIImage      // placeholder media
+    var size: CGSize                   // size of the media to be diaplayed
     
     init(url: URL? = nil, image: UIImage? = nil, placeholderImage: UIImage, size: CGSize) {
         self.url = url
