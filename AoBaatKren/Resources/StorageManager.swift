@@ -105,6 +105,7 @@ final class StorageManager {
                         return
                     }
                     // else operation was successful
+                    print("SM: ",url)
                     // - return url of the image to the completion handler
                     completion(.success(url))
                 }
