@@ -27,14 +27,17 @@ To run this project, you must first execute the command `pod install` in the pro
 
 ## Video
 ### Part-1
-https://github.com/Huzaifa201017/Ios-Chat-App/assets/96493608/30a9b4dd-c036-47dd-aec7-0329fbfee003
-### Part-2
-https://github.com/Huzaifa201017/Ios-Chat-App/assets/96493608/7289df40-1e4f-4df8-a0b7-5d7a030dc549
 
-## Images
-![1](https://github.com/Huzaifa201017/Ios-Chat-App/assets/96493608/b9ffdd3d-d97d-4288-8179-9547e16d4d5f)
-![2](https://github.com/Huzaifa201017/Ios-Chat-App/assets/96493608/3bbbb437-2e2b-462f-a38c-355f53b592ce)
-![3](https://github.com/Huzaifa201017/Ios-Chat-App/assets/96493608/e3154b98-af54-4698-ad3f-9e479c0eee37)
+https://github.com/Huzaifa201017/Ios-Chat-App/assets/96493608/f6746848-6aad-4793-a190-04239fa3e911
+
+
+### Part-2
+
+
+https://github.com/Huzaifa201017/Ios-Chat-App/assets/96493608/67dbdcb2-c504-4247-855f-06a68b3c418b
+
+
+
 
 
 
